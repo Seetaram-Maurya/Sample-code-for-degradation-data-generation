@@ -1,3 +1,9 @@
+% Created on Mon March 04 13:14:27 2022
+% @author: Seetaram Maurya
+
+% This code is written to generate challenging degradation data; In the similar way, the code 
+%can be modified/used to generated more number of data samples 
+
 clear all;
 close all;
 clc;
@@ -5,11 +11,11 @@ clc;
 %discrete points in time
 t = 0 : 0.5 : 400;
 
-% costants initialization.
-alpha1 =1;
+% parameters initialization.
+alpha1 =1.1;
 alpha2=1.5;
-alpha3=2;
-beta = 0.009;
+alpha3=1.7;
+beta = 0.007;
 
 % define model to generate data
 S1 = alpha1*exp(t(1,1:180) * beta);
