@@ -12,15 +12,15 @@ alpha3=2;
 beta = 0.009;
 
 % define model to generate data
-Y1 = alpha1 + exp(t(1,1:180) * beta);
-Y1=awgn(Y1,30,'measured'); 
-Y2 = alpha2 + exp(t(1,190:300) * beta);
-Y2= awgn(Y2,30,'measured'); 
-Y3 = alpha3 + exp(t(1,310:450) * beta);
-Y3= awgn(Y3,30,'measured'); 
+S1 = alpha1 + exp(t(1,1:180) * beta);
+S1=awgn(S1,30,'measured'); 
+S2 = alpha2 + exp(t(1,190:300) * beta);
+S2= awgn(S2,30,'measured'); 
+S3 = alpha3 + exp(t(1,310:450) * beta);
+S3= awgn(S3,30,'measured'); 
 
 % concatenation 
-Y=[Y1,Y2,Y3];
+S=[S1,S2,S3];
 
 % visualize generated data
-plot(Y)
+plot(S)
